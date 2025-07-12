@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Potta+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html {
+  scroll-behavior: smooth;  
+}
+body {
+  padding-top: 116px; 
+  font-family: "Poppins", sans-serif;
+}
+#nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: top 0.3s ease-in-out;
+}
+#nav-bar img{
+    height: 100px;
+    width: 100px;
+}
+.pages li a{
+    color: #4C627B;
+    font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  margin: 0 20px;
+  font-size: 25px;
+}
+.Buttons i{
+    color: #818181;
+    font-size: 25px;
+}
+.Buttons a{
+    color: #818181;
+    font-size: 20px;
+}
+.desti-image {
+  background-image: url('images/destination.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  margin-top: 80px;
+  filter: brightness(0.6);
+}
+.desti-image + h1 {
+  position: absolute;
+  font-family: "Poetsen One", sans-serif;
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+/* Medium screen adjustment */
+@media (max-width: 768px) {
+  .desti-image + h1 {
+    font-size: 8vw;
+  }
+}
+
+/* Small screen adjustment */
+@media (max-width: 480px) {
+  .desti-image + h1 {
+    font-size: 10vw;
+  }
+}
+.adventure h1{
+color: #4C627B;
+font-size: 70px;
+margin-top: 5%;
+margin-bottom: 5%;
+}
+@media (max-width: 768px) {
+  .adventure h1 {
+    font-size: 48px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+}
+
+/* Responsive for mobile devices */
+@media (max-width: 553px) {
+  .adventure h1 {
+    font-size: 36px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+}
+.nepal-info-box {
+  background-color: #d6ecff;
+  padding: 40px 150px;
+  margin: 40px auto;
+  border-radius: 8px;
+  color: #333;
+  line-height: 1.8;
+  text-align: center;
+  font-size: 22px;
+}
+@media (max-width: 768px) {
+  .nepal-info-box {
+    padding: 30px 60px;
+    font-size: 20px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .nepal-info-box {
+    padding: 20px 20px;
+    font-size: 18px;
+  }
+}
+  .adventure .card-img-top {
+    height: 300px;
+    object-fit: cover;
+  }
+/* footer */
+.footer {
+  background-color: #E8E8E8;
+  margin-top: 5%;
+  padding: 40px 0px;
+  font-family: sans-serif;
+  color: #333;
+}
+
+.footer p{
+  font-family: "Poppins", sans-serif;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px;
+}
+
+.footer-logo {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-icon {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.social-icons a img {
+  height: 32px;
+  margin: 0 6px;
+  border-radius: 8px;
+  background-color: #ccc;
+  padding: 6px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  padding-top: 20px;
+  border-top: 1px solid #E8E8E8;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 10%;
+}
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    padding: 0 5%;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 5%;
+  }
+
+  .social-icons a img {
+    height: 28px;
+  }
+}
+  

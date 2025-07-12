@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="search.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" href="images/logo.png">
+    <title>Yatrika</title>
+</head>
+<body>
+  <!-- Nav-bar  -->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid px-4">
+              <a class="navbar-brand py-0" href="index.html">
+                <img src="images/logo.png" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav pages me-auto mb-2 mx-auto mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="./destination.html">Destination</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./gear.html">Gears</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./community.html">Community</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="./partner.html">Join as partner</a>
+                  </li>
+                </ul>
+                <div class=" Buttons d-flex d-flex justify-content-center gap-4">
+                     <div class="wishlist d-flex flex-column align-items-center gap-2">                     
+                        <a class="nav-link d-flex flex-column mt-2 align-items-center"  href="#"><i class="fa-regular fa-heart"></i> Wishlist</a>
+                     </div>             
+                     <div class="Cart d-flex flex-column align-items-center gap-2">
+                        <a class="nav-link d-flex flex-column mt-2 align-items-center"  href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+                     </div>
+                <div class="Profile d-flex flex-column align-items-center gap-2">
+                  
+                        <a class="nav-link d-flex flex-column mt-2 align-items-center"  href="../codes/login.html"><i class="fa-regular fa-user "></i> Profile</a> 
+                </div>
+              </div>
+            </div>
+          </nav>
+    </section>  
+    <!-- Search Bar Section -->
+<div class="bg-img d-flex justify-content-center align-items-center">
+  <div class="search-container">
+    <form id="searchForm">
+      <input type="text" id="searchInput" placeholder="SEARCH" />
+      <button type="submit">
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
+  </div>
+</div>
+    <!-- Pages -->
+  <div class="plan d-flex justify-content-center align-items-center">
+    <h1>- Plan Your Yatra -</h1>
+</div>   
+<div id="carouselExample" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="3000" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active c-item">
+      <img src="images/destination.jpg" class="d-block w-100 c-img" alt="...">
+      <div class="carousel-caption d-none d-md-block center-caption">
+        <h1 style="font-size: 80px;" class="display-1  fw-bolder">Yatrika Travel Package</h1>
+        <a style="font-size: 25px;" href="../codes/destination.html" class="btn custom-btn mt-3">Get Start</a>
+      </div>
+    </div>
+    <div class="carousel-item c-item">
+      <img src="images/GEARS.jpg" class="d-block w-100 c-img" alt="...">
+      <div class="carousel-caption d-none mb-2 d-md-block center-caption">
+        <h1 style="font-size: 80px;" class="display-1  fw-bolder">Yatrika Gear Bundle</h1>
+        <a style="font-size: 25px;" href="../codes/gear.html" class="btn custom-btn mt-3">Get Start</a>
+      </div>
+    </div>
+    <div class="carousel-item c-item">
+      <img src="images/community.jpg" class="d-block w-100 c-img" alt="...">
+      <div class="carousel-caption d-none d-md-block center-caption">
+        <h1 style="font-size: 80px;" class="display-1  fw-bolder">Yatrika Community</h1>
+        <a style="font-size: 25px;" href="../codes/community.html" class="btn custom-btn mt-3">Get Start</a>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Content  -->
+<div class="sec-logo">
+  <div>
+    <img src="images/logo-2.png" alt="">
+  </div>
+ <div> 
+  <h1>Yatrika</h1>
+</div>
+ <div class="paragraph">
+  <p>Yatrika is a trek planning platform built to connect trekkers with the real heart of Nepal. We help travelers find affordable homestays, rent or buy trekking gear, join group treks, and book trusted local guides and agencies — all in one place. Our goal is to make trekking simpler, more budget-friendly, and more meaningful.</p>
+<p>For local businesses and agencies, Yatrika offers a free platform to showcase services, reach more customers, and grow their presence in the trekking community. Whether you're planning a solo adventure or offering a service, Yatrika is your partner on the journey.</p>
+ </div>
+ </div>
+  <div class="imp-cont">
+   <div class="first common">
+    <img src="images/first.png" alt="">
+    <h1>Where Every Trek Begins</h1>
+    <p>Connecs with local guides, homestays, gear, and real experiences across Nepal to help you plan smarter, spend less, and explore deeper.</p>
+   </div>
+   <div class="second common">
+    <img src="images/second.png" alt="">
+    <h1>Responsible Tourism</h1>
+    <p>Every time you do a hiking trip with us you’re helping to conserve wild landscapes for our kids and for future generations.</p>
+   </div>
+   <div class="third common">
+    <img src="images/third.png" alt="">
+    <h1>Support Local Communities</h1>
+    <p>Yatrika is a purely nurtured and owned native trekking company in Nepal.</p>
+   </div>
+  </div>
+
+   <!-- footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-section">
+        <img src="images/logo-2.png" alt="Trek Logo" class="footer-logo">
+        <p class="footer-title">Travel The Nepali<br>Way</p>
+      </div>
+      <div class="footer-section">
+        <h3>Yatrika</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./destination.html">Destination</a></li>
+          <li><a href="./gear.html">Gears</a></li>
+          <li><a href="./community.html">Community</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <img src="images/contact-us.png" alt="Contact" class="footer-icon">
+        <h3>Contact Us</h3>
+      </div>
+  
+     <div class="footer-section text-center mt-5">
+  <h3 class="mb-3">Follow us on:</h3>
+  <div class="social-icons d-flex justify-content-center gap-4">
+    <a href="#" class="text-dark fs-4"><i class="bi bi-facebook"></i></a>
+    <a href="#" class="text-dark fs-4"><i class="bi bi-instagram"></i></a>
+    <a href="#" class="text-dark fs-4"><i class="bi bi-twitter-x"></i></a>
+  </div>
+</div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+      <span>Privacy Policy</span>
+      <span>© 2025 Yatrika.copyright</span>
+      <span>Terms & Conditions</span>
+    </div>
+  </footer>
+
+</body>
+</html>

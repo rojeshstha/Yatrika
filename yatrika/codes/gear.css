@@ -1,0 +1,267 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Potta+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+        font-family: "Poppins", sans-serif;
+}
+body {
+  padding-top: 116px; 
+  font-family: "Poppins", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+#nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: top 0.3s ease-in-out;
+}
+#nav-bar img{
+    height: 100px;
+    width: 100px;
+}
+.pages li a{
+    color: #4C627B;
+    font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  margin: 0 20px;
+  font-size: 25px;
+}
+.Buttons i{
+    color: #818181;
+    font-size: 25px;
+}
+.Buttons a{
+    color: #818181;
+    font-size: 20px;
+}
+.desti-image {
+  background-image: url('../images/GEARS.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 105vh;
+  width: 100%;
+  margin-top: 80px;
+  filter: brightness(0.6);
+  position: relative; /* Added for absolute child positioning */
+}
+
+.desti-image + h1 {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 5vw;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  margin: 0;
+  padding: 0 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .desti-image + h1 {
+    font-size: 7vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .desti-image + h1 {
+    font-size: 9vw;
+  }
+}
+/* buy and rent */
+.text-center.mb-4 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Shared Gear Button Styles */
+.gear-btn {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  min-width: 180px;
+}
+
+/* Rent Button Style */
+.btn-rent {
+  background: linear-gradient(135deg, #4c6ef5, #5a8dee);
+  color: #fff;
+}
+
+/* Buy Button Style */
+.btn-buy {
+  background: linear-gradient(135deg, #2ddf90, #1cc88a);
+  color: #fff;
+}
+
+/* Hover Effect */
+.gear-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Click Animation */
+.gear-btn:active {
+  transform: scale(0.95);
+}
+
+/* rent */
+.gear-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.gear-card:hover {
+  transform: scale(1.02);
+}
+
+.card-img-wrapper {
+  overflow: hidden;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+ .card-img-top {
+ width: 100%;
+  height: 300px; /* or 250px or whatever works best for your layout */
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.card.gear-card,
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* Responsive font and padding adjustments */
+@media (max-width: 576px) {
+  .gear-btn {
+    font-size: 1rem;
+    padding: 12px 24px;
+    min-width: 150px;
+  }
+}
+
+/* footer */
+.footer {
+  background-color: #E8E8E8;
+  margin-top: 5%;
+  padding: 40px 0px;
+  font-family: sans-serif;
+  color: #333;
+}
+.footer p{
+  font-family: "Poppins", sans-serif;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px;
+}
+
+.footer-logo {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-icon {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.social-icons a img {
+  height: 32px;
+  margin: 0 6px;
+  border-radius: 8px;
+  background-color: #ccc;
+  padding: 6px;
+}
+
+.footer-bottom {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  padding-top: 20px;
+  border-top: 1px solid #E8E8E8;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 10%;
+}
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    padding: 0 5%;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 5%;
+  }
+
+  .social-icons a img {
+    height: 28px;
+  }
+}
+  
+  

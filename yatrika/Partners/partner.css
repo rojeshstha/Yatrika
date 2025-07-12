@@ -1,0 +1,136 @@
+/* Hide by default */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  
+  /* No dark background */
+  background-color: transparent;
+
+  /* Center modal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Prevent background scroll */
+  overflow: hidden;
+}
+
+/* Modal content box */
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+/* width responsive banaune */
+@media (max-width: 600px) {
+  .modal-content {
+    width: 90%;
+  }
+}
+
+/* Form input styles */
+#partnerForm input[type="text"],
+#partnerForm input[type="file"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Submit button */
+#partnerForm button[type="submit"] {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#partnerForm button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Close button (X) */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+/* profile */
+  #users {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      max-width: 1000px;
+      margin: auto;
+    }
+    #users h4 {
+      font-weight: 600;
+      color: #333;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+    }
+    #users .form-label {
+      font-weight: 500;
+      color: #555;
+    }
+    #users .form-control {
+      border-radius: 6px;
+    }
+    #users .btn-primary {
+      background-color: #6f42c1;
+      border: none;
+    }
+    #users .btn-primary:hover {
+      background-color: #59359e;
+    }
+    #profilePreview {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #ccc;
+    }
+  #profilePic {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+    @media (max-width: 768px) {
+      #users .col-md-3, #users .col-md-9 {
+        text-align: center;
+      }
+    }
+
+/* providers */
+.provider-photo {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .pan-image {
+      width: 100px;
+      height: 60px;
+      object-fit: contain;
+    }
+    
